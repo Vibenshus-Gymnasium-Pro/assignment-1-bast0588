@@ -1,0 +1,8 @@
+current_users = ["Bob","Bob2","Eater_of_Bob","The_True_Bob","Bobs_man"]
+new_useres = ["Karl","Bob","Bob_Be_bob","Alfred"]
+current_users_check = [cur.lower() for cur in current_users]
+for new_user in new_useres:
+    if new_user.lower() in current_users_check:
+        print(new_user,"is taken")
+    else:
+        print(new_user,"is avalible")
